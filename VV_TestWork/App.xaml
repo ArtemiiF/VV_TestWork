@@ -1,0 +1,26 @@
+﻿<Application x:Class="VV_TestWork.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VV_TestWork"
+             xmlns:viewmodel="clr-namespace:VV_TestWork.MVVM.ViewModels"
+             xmlns:view="clr-namespace:VV_TestWork.MVVM.Views"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:AddEntityViewModel}">
+                <view:AddEntityView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:EditEntityViewModel}">
+                <view:EditEntityView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
