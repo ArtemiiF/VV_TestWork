@@ -1,4 +1,4 @@
-# VV_TestWork(C#, WPF, MVVM, MS SQL)
+# VV_TestWork(C#, WPF, MVVM, MS SQL, DI, Entity Framework)
 
 ## Инструкция
      1. Установка
